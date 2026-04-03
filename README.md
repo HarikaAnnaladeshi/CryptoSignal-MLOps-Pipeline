@@ -1,4 +1,4 @@
-# CryptoSignal-MLOps-Pipeline
+MetaStackerBandit Trading-Signal Pipeline
 This project is a robust MLOps batch processing pipeline designed to generate trading signals based on a rolling mean of asset closing prices. It was built as part of a technical assessment to demonstrate skills in data validation, containerization, and observability.
 
 Features
@@ -31,19 +31,17 @@ pip install -r requirements.txt
 
 # Run the pipeline
 python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
+
 2. Docker Execution (Recommended)
 To run the pipeline in a fully isolated container:
-
-PowerShell
 # Build the Docker image
 docker build -t mlops-task .
 
 # Run the container (auto-removes after completion)
 docker run --rm mlops-task
+
 Sample Output (metrics.json)
 Upon a successful run, the pipeline outputs the following structured JSON:
-
-JSON
 {
     "version": "v1",
     "status": "success",
@@ -63,4 +61,3 @@ Missing 'close' columns in datasets.
 Quoted or "squashed" CSV headers.
 
 Empty input files.
-
