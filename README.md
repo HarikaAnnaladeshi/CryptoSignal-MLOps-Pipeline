@@ -1,4 +1,4 @@
-MetaStackerBandit Trading-Signal Pipeline
+CryptoSignal-MLOps-Pipeline
 This project is a robust MLOps batch processing pipeline designed to generate trading signals based on a rolling mean of asset closing prices. It was built as part of a technical assessment to demonstrate skills in data validation, containerization, and observability.
 
 Features
